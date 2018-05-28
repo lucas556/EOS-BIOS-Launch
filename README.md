@@ -84,7 +84,7 @@ chmod  +x ./Wallet/*.sh
       4. 私匙-> `EOSIO_PRODUCER_PRIV_KEY`
       5. `BIOS`节点所启动的`BP`账户名->`INIT_ACCOUNT`
       6. `BIOS`节点所启动的`BP`的公匙->`INIT_PUB_KEY`
-7. 修改`cleos.sh`下的`NODEOSBINDIR`(为更改路径可不修改)
+7. 检查`cleos.sh`下的`NODEOSBINDIR`.
 1. 启动`BIOS`节点
 2. 钱包中导入`eosio`的私匙.(00_WALLET_IMPORT.sh)
 2. 发布`BIOS`合约，设置ABP(01)
@@ -99,5 +99,5 @@ chmod  +x ./Wallet/*.sh
 基本与`BP`相同.唯一不同的是`config.ini`的`p2p-peer-address`必须填写`BIOS`节点.
 
 ## 其他
-更改本目录下的`cleos.sh`的`NODEOSBINDIR`参数。
-执行`Z_TESTS_SYSTEM_TABLES.sh`脚本，可查询`eosio.system`合约的数据表信息.
+更改本目录下的`cleos.sh`的`NODEOSBINDIR`参数.
+执行`Z_TESTS_SYSTEM_TABLES.sh`脚本,可查询`eosio.system`合约的数据表信息.
