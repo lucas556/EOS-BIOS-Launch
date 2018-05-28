@@ -28,8 +28,8 @@ sed -i.bak '16i set( CORE_SYMBOL_NAME "EOS" )' CMakeLists.txt
 cd /opt
 git clone https://github.com/lucas556/EOS-BIOS-Launch.git
 cd EOS-BIOS-Launch
-chmod -R 777 ./*.sh
-chmod -R 777 ./Wallet/*.sh
+chmod  +x ./*.sh
+chmod  +x ./Wallet/*.sh
 ```
 如果你使用不同的路径或文件名,请修改cleos.sh, start.sh, stop.sh, config.ini (genesis路径), Wallet/start_wallet.sh, Wallet/stop_wallet.sh文件与你的路径或文件名适配.
 
