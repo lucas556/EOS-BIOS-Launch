@@ -1,12 +1,6 @@
 #!/bin/bash
-################################################################################
-#
-# Scrip Created by http://CryptoLions.io
-# https://github.com/CryptoLions/EOS-Jungle-Testnet
-#
-###############################################################################
 
-DIR="/opt/JungleTestnet"
+DIR="/opt/EOS-Boot-Steps-dawn4"
 
 
     if [ -f $DIR"/nodeos.pid" ]; then

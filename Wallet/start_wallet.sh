@@ -1,14 +1,7 @@
 #!/bin/bash
 
-################################################################################
-#
-# Scrip Created by http://CryptoLions.io
-# https://github.com/CryptoLions/EOS-Jungle-Testnet/
-#
-###############################################################################
-
-NODEOSBINDIR="/home/eos-dawn-v4.0.0/eos/build/programs"
-DATADIR="/opt/JungleTestnet/Wallet"
+NODEOSBINDIR="/home/eos-dawn-v4.2.0/eos/build/programs"
+DATADIR="/opt/EOS-Boot-Steps-dawn4/Wallet"
 WALLET_HOST="127.0.0.1"
 WALLET_POSRT="3000"
 
