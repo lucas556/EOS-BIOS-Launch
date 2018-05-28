@@ -35,16 +35,15 @@ chmod -R 777 ./Wallet/*.sh
 
 ### 所有BP准备工作
 1. 在演练开始之前部署好自己的节点，安装`jq`依赖。
-2. 运行`nodeos -v`保持与`BIOS`节点相同的版本
-3. 运行`nodeos`,有错误不要紧关掉就可以了。
+2. 运行`nodeos -v`保持与`BIOS`节点相同的版本(dawn v4.2为13076119).
+3. 运行`./start.sh`.
 4. 公布自己加入网络的BP信息(`account_name`,`Public_Key`,`p2p-server-address`).
-5. 克隆github用`config`下的文件代替`~/.local/share/eosio/nodeos/config`
-6. 更改`config.ini`文件配置    
+5. 更改`config.ini`文件配置    
     1. `p2p-peer-address`
     1. `producer-name`
     1. `private-key`
     1. `agent-name`
-7. 在`BP`目录下：
+6. 在`BP`目录下：
     1. 运行`cleos wallet create`, 或`cd /path/to/eos/build/programs/cleos`执行`./cleos wallet create`,创建钱包，将创建钱包返回的钱包密码复制为`0000_CONFIG.conf`文件的`WALLET_PASSWD`对应的参数。
     2. `0000_CONFIG.conf`文件配置：
       1. `eos`部署路径->`SOURCES_FOLDER`
@@ -52,10 +51,10 @@ chmod -R 777 ./Wallet/*.sh
       3. 公匙->`INIT_PUB_KEY`，
       4. 私匙-> `INIT_PRIV_KEY`,
       5. 节点URL(http端口:http://ip:8888)->`INIT_URL`.
-8. 修改`cleos.sh`下的`NODEOSBINDIR`
-9. 保持节点关闭，等待`BIOS`启动
-10. 等待`BIOS`通知开始逐个运行节点，加入网络。
-11. 接到通知的`BP`,可以注册`BP`,抵押代币,投票。
+7. 修改`cleos.sh`下的`NODEOSBINDIR`
+8. 保持节点关闭，等待`BIOS`启动
+9. 等待`BIOS`通知开始逐个运行节点，加入网络。
+10. 接到通知的`BP`,可以注册`BP`,抵押代币,投票。
 
 
 * 关于配置环境，由于`BIOS`不会长久运行，在配置文件中加入其`p2p-peer-address`会造成链接该节点失败，故EOSTEA和EOSBeijing讨论的方案是：先由`BIOS`团队再开一台BP节点链接`BIOS`节点并与其他节点相互链接，等启动后，该团队的`BP`节点再去除`BIOS`节点。
