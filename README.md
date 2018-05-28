@@ -29,8 +29,8 @@ git clone https://github.com/CryptoLions/EOS-Jungle-Testnet.git
 cd EOS-Jungle-Testnet
 chmod -R 777 ./*.sh
 chmod -R 777 ./Wallet/*.sh
-
 ```
+如果你使用不同的路径或文件名,请修改cleos.sh, start.sh, stop.sh, config.ini (genesis路径), Wallet/start_wallet.sh, Wallet/stop_wallet.sh文件与你的路径或文件名适配.
 
 ### 所有BP准备工作
 1. 在演练开始之前部署好自己的节点，安装`jq`依赖。
