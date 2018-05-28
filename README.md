@@ -31,7 +31,7 @@ cd EOS-BIOS-Launch
 chmod  +x ./*.sh
 chmod  +x ./Wallet/*.sh
 ```
-如果你使用不同的路径或文件名,请修改cleos.sh, start.sh, stop.sh, config.ini, Wallet/start_wallet.sh, Wallet/stop_wallet.sh文件与你的路径或文件名适配.
+如果你使用不同的路径或文件名,请修改`cleos.sh`, `start.sh`, `stop.sh`, `config.ini`文件与你的路径或文件名适配.
 
 ### 所有BP准备工作
 1. 在演练开始之前部署好自己的节点，安装`jq`依赖.
