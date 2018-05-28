@@ -22,7 +22,15 @@ sed -i.bak '16i set( CORE_SYMBOL_NAME "EOS" )' CMakeLists.txt
 ```shell
 ./start.sh --delete-all-blocks --genesis-json genesis.json
 ```
+### 如何配置节点和测试BP
+```shell
+cd /opt
+gi clone https://github.com/CryptoLions/EOS-Jungle-Testnet.git
+cd EOS-Jungle-Testnet
+chmod -R 777 ./*.sh
+chmod -R 777 ./Wallet/*.sh
 
+```
 
 ### 所有BP准备工作
 1. 在演练开始之前部署好自己的节点，安装`jq`依赖。
