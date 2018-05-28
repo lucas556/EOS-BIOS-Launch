@@ -1,12 +1,7 @@
 #!/bin/bash
-################################################################################
-#
-# Scrip Created by http://CryptoLions.io
-# https://github.com/CryptoLions/EOS-Jungle-Testnet
-#
-###############################################################################
 
-DIR="/opt/JungleTestnet/Wallet"
+
+DIR="/opt/EOS-Boot-Steps-dawn4/Wallet"
 
     if [ -f $DIR"/wallet.pid" ]; then
         pid=$(cat $DIR"/wallet.pid")
