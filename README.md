@@ -60,7 +60,7 @@ chmod  +x ./Wallet/*.sh
 * 关于配置环境，由于`BIOS`不会长久运行，在配置文件中加入其`p2p-peer-address`会造成链接该节点失败，故EOSTEA和EOSBeijing讨论的方案是：先由`BIOS`团队再开一台BP节点链接`BIOS`节点并与其他节点相互链接，等启动后，该团队的`BP`节点再去除`BIOS`节点。
 
 ### BIOS
-1. 生成`eosio`密匙对。[生成地址](https://eosfans.io/tools/generate/)
+1. 生成`eosio`密匙对. [生成地址](https://eosfans.io/tools/generate/)
 1. 更改`config/config.ini`文件配置    
   1. `p2p-peer-address`为`BIOS`所启动的`BP`节点的`p2p`地址。
 2. 更改`config/genesis.json`
@@ -76,14 +76,14 @@ chmod  +x ./Wallet/*.sh
   3. 填写生成的`eosio`->`private-key`
   4. `agent-name`
 6. 在`BIOS`目录下：
-    1. 运行`cleos wallet create`, 或`cd /path/to/eos/build/programs/cleos`执行`./cleos wallet create`,创建钱包，将创建钱包返回的钱包密码复制为`0000_CONFIG.conf`文件的`WALLET_PASSWD`对应的参数。
+    1. 运行`cleos wallet create`, 或`cd /home/eos-dawn-v4.2.0/eos/build/programs/cleos`执行`./cleos wallet create`,创建钱包，将创建钱包返回的钱包密码复制为`0000_CONFIG.conf`文件的`WALLET_PASSWD`对应的参数。
     2. `0000_CONFIG.conf`文件配置：
       1. `eos`部署路径->`SOURCES_FOLDER`
       3. 公匙->`EOSIO_PRODUCER_PUB_KEY`，
       4. 私匙-> `EOSIO_PRODUCER_PRIV_KEY`,
       5. `BIOS`节点所启动的`BP`账户名->`INIT_ACCOUNT`
       6. `BIOS`节点所启动的`BP`的公匙->`INIT_PUB_KEY`
-7. 修改`cleos.sh`下的`NODEOSBINDIR`
+7. 修改`cleos.sh`下的`NODEOSBINDIR`(为更改路径可不修改)
 1. 启动`BIOS`节点
 2. 钱包中导入`eosio`的私匙.(00_WALLET_IMPORT.sh)
 2. 发布`BIOS`合约，设置ABP(01)
