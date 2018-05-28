@@ -25,7 +25,7 @@ sed -i.bak '16i set( CORE_SYMBOL_NAME "EOS" )' CMakeLists.txt
 ### 如何配置节点和测试BP
 ```shell
 cd /opt
-gi clone https://github.com/CryptoLions/EOS-Jungle-Testnet.git
+git clone https://github.com/CryptoLions/EOS-Jungle-Testnet.git
 cd EOS-Jungle-Testnet
 chmod -R 777 ./*.sh
 chmod -R 777 ./Wallet/*.sh
