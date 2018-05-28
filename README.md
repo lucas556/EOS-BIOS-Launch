@@ -31,7 +31,7 @@ cd EOS-BIOS-Launch
 chmod  +x ./*.sh
 chmod  +x ./Wallet/*.sh
 ```
-如果你使用不同的路径或文件名,请修改cleos.sh, start.sh, stop.sh, config.ini (genesis路径), Wallet/start_wallet.sh, Wallet/stop_wallet.sh文件与你的路径或文件名适配.
+如果你使用不同的路径或文件名,请修改cleos.sh, start.sh, stop.sh, config.ini, Wallet/start_wallet.sh, Wallet/stop_wallet.sh文件与你的路径或文件名适配.
 
 ### 所有BP准备工作
 1. 在演练开始之前部署好自己的节点，安装`jq`依赖.
@@ -45,7 +45,7 @@ chmod  +x ./Wallet/*.sh
     1. `private-key`
     1. `agent-name`
 7. 在`BP`目录下：
-    1. 运行`cleos wallet create`, 或`cd /path/to/eos/build/programs/cleos`执行`./cleos wallet create`,创建钱包，将创建钱包返回的钱包密码复制为`0000_CONFIG.conf`文件的`WALLET_PASSWD`对应的参数.
+    1. 运行`cleos wallet create`, 或`cd /home/eos-dawn-v4.2.0/eos/build/programs/cleos`执行`./cleos wallet create`,创建钱包，将创建钱包返回的钱包密码复制为`0000_CONFIG.conf`文件的`WALLET_PASSWD`对应的参数.
     2. `0000_CONFIG.conf`文件配置：
       1. `eos`部署路径->`SOURCES_FOLDER`
       2. 账户名->`INIT_ACCOUNT`，
