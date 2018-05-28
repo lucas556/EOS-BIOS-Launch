@@ -5,6 +5,24 @@ EOS版本: dawn-v4.2.0
 > 由于涉及`eosio`账号分权技术方案，官方还未给出，快照后投票无法进行，故`BIOS`节点只设置`eosio`为APB,并且不会进行快照的验证，只对系统进行初始化工作。
 
 ## 步骤说明
+### 安装EOSIO软件
+> 在手动编译的情况下，请在CMakeLists.txt中将标记符号从SYS更改为EOS,或者在EOS sources文件夹中运行此命令.
+```shell
+git clone https://github.com/eosio/eos --recursive    
+cd eos  
+
+git checkout dawn-v4.2.0  
+git submodule update --init --recursive   
+
+sed -i.bak '16i set( CORE_SYMBOL_NAME "EOS" )' CMakeLists.txt  
+
+./eosio_build.sh   
+```
+首先运行应该是--delete-all-blocks和--genesis-json
+```shell
+./start.sh --delete-all-blocks --genesis-json genesis.json
+```
+
 
 ### 所有BP准备工作
 1. 在演练开始之前部署好自己的节点，安装`jq`依赖。
