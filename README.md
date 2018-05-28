@@ -6,7 +6,7 @@ EOS版本: dawn-v4.2.0
 
 ## 步骤说明
 ### 安装EOSIO软件
-> 在手动编译的情况下，请在CMakeLists.txt中将标记符号从SYS更改为EOS,或者在EOS sources文件夹中运行此命令.
+> 在手动编译的情况下，请在`CMakeLists.txt`中将标记符号从SYS更改为EOS,或者在EOS sources文件夹中运行此命令.
 ```shell
 mkdir /home/eos-dawn-v4.2.0  
 cd /home/eos-dawn-v4.2.0
@@ -35,7 +35,7 @@ chmod -R 777 ./Wallet/*.sh
 
 ### 所有BP准备工作
 1. 在演练开始之前部署好自己的节点，安装`jq`依赖。
-2. 运行`nodeos -v`保持与`BIOS`节点相同的版本(dawn v4.2为13076119).
+2. 运行`nodeos -v`保持与`BIOS`节点相同的版本(dawn v4.2为`13076119`).
 3. 运行`./start.sh`.
 4. 公布自己加入网络的BP信息(`account_name`,`Public_Key`,`p2p-server-address`).
 5. 更改`config.ini`文件配置    
