@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="/opt/EOS-Boot-Steps-dawn4"
+DIR="/opt/EOS-BIOS-Launch"
 
 
     if [ -f $DIR"/nodeos.pid" ]; then
