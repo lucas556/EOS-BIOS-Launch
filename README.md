@@ -17,7 +17,10 @@ git checkout dawn-v4.2.0
 git submodule update --init --recursive   
 
 sed -i.bak '16i set( CORE_SYMBOL_NAME "EOS" )' CMakeLists.txt  
-./eosio_build.sh   
+./eosio_build.sh
+
+cd build
+make install
 ```
 
 ### 如何配置节点和测试BP
