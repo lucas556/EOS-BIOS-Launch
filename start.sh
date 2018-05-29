@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NODEOSBINDIR="/home/eos-dawn-v4.2.0/eos/build/programs/nodeos"
-DATADIR="/opt/EOS-Boot-Steps-dawn4"
+DATADIR="/opt/EOS-BIOS-Launch"
 
 $DATADIR/stop.sh
 echo -e "Starting Nodeos \n";
