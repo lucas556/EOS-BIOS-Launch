@@ -19,10 +19,7 @@ git submodule update --init --recursive
 sed -i.bak '16i set( CORE_SYMBOL_NAME "EOS" )' CMakeLists.txt  
 ./eosio_build.sh   
 ```
-首先运行应该是--delete-all-blocks和--genesis-json
-```shell
-./start.sh --delete-all-blocks --genesis-json genesis.json
-```
+
 ### 如何配置节点和测试BP
 ```shell
 cd /opt
@@ -32,7 +29,10 @@ chmod  +x ./*.sh
 chmod  +x ./Wallet/*.sh
 ```
 如果你使用不同的路径或文件名,请修改`cleos.sh`, `start.sh`, `stop.sh`, `config.ini`文件与你的路径或文件名适配.
-
+首先运行应该是--delete-all-blocks和--genesis-json
+```shell
+./start.sh --delete-all-blocks --genesis-json genesis.json
+```
 ### 所有BP准备工作
 1. 在演练开始之前部署好自己的节点，安装`jq`依赖.
 2. 运行`nodeos -v`保持与`BIOS`节点相同的版本(dawn v4.2为`13076119`).
