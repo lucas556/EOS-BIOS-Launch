@@ -28,8 +28,8 @@ make install
 cd /opt
 git clone https://github.com/lucas556/EOS-BIOS-Launch.git
 cd EOS-BIOS-Launch
-chmod  +x ./*.sh
-chmod  +x ./Wallet/*.sh
+chmod  +x ./*.sh ./BP/*.sh ./BIOS/*.sh
+
 ```
 首先运行应该是`--delete-all-blocks`和`--genesis-json`
 
