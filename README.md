@@ -24,7 +24,7 @@ make install
 ```shell
 cd /eos-tool
 git clone https://github.com/lucas556/EOS-BIOS-Launch.git
-cd EOS-BIOS-Launch
+cd /eos-tool
 chmod  +x ./*.sh ./BP/*.sh ./BIOS/*.sh
 
 ```
