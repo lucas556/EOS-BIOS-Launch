@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="/opt/EOS-BIOS-Launch"
+DIR="/eos-tool"
 
 
     if [ -f $DIR"/nodeos.pid" ]; then
