@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NODEOSBINDIR="/home/eos-dawn-v4.2.0/eos/build/programs/"
+NODEOSBINDIR="/eos/build/programs/"
 
 WALLETHOST="127.0.0.1"
 NODEHOST="127.0.0.1"
