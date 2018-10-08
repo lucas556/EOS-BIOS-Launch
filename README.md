@@ -8,15 +8,12 @@ EOS版本: dawn-v4.2.0
 ### 安装EOSIO软件
 > 在手动编译的情况下，请在`CMakeLists.txt`中将标记符号从SYS更改为EOS,或者在EOS sources文件夹中运行此命令.
 ```shell
-mkdir /home/eos-dawn-v4.2.0  
-cd /home/eos-dawn-v4.2.0
 git clone https://github.com/eosio/eos --recursive    
 cd eos  
 
-git checkout dawn-v4.2.0  
+git checkout 8f0f54c 
 git submodule update --init --recursive   
 
-sed -i.bak '16i set( CORE_SYMBOL_NAME "EOS" )' CMakeLists.txt  
 ./eosio_build.sh
 
 cd build
@@ -25,7 +22,7 @@ make install
 
 ### 如何配置节点和测试BP
 ```shell
-cd /opt
+cd /eos-tool
 git clone https://github.com/lucas556/EOS-BIOS-Launch.git
 cd EOS-BIOS-Launch
 chmod  +x ./*.sh ./BP/*.sh ./BIOS/*.sh
